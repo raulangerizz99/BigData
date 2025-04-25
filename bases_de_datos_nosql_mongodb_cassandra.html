@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Bases de datos NoSQL: MongoDB, Cassandra | BigData </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Raúl Angeriz Leonisio" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">BigData</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="tema_1.html" class="daddy">Tema 1</a>
+   <ul class="other-section">
+      <li><a href="definicin.html" class="no-ch">Definición</a></li>
+      <li><a href="historia_y_evolucin.html" class="no-ch">Historia y evolución</a></li>
+      <li><a href="caractersticas_clave.html" class="no-ch">Características clave</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2.html" class="daddy">Tema 2</a>
+   <ul class="other-section">
+      <li><a href="componentes_de_la_arquitectura.html" class="no-ch">Componentes de la arquitectura</a></li>
+      <li><a href="herramientas_para_el_procesamiento_de_datos.html" class="no-ch">Herramientas para el procesamiento de datos</a></li>
+      <li><a href="almacenamiento_y_bases_de_datos_nosql.html" class="no-ch">Almacenamiento y bases de datos NoSQL</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_3.html" class="current-page-parent daddy">Tema 3</a>
+   <ul>
+      <li><a href="hadoop_y_mapreduce.html" class="no-ch">Hadoop y MapReduce</a></li>
+      <li><a href="apache_spark.html" class="no-ch">Apache Spark</a></li>
+      <li id="active"><a href="bases_de_datos_nosql_mongodb_cassandra.html" class="active no-ch">Bases de datos NoSQL: MongoDB, Cassandra</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4.html" class="daddy">Tema 4</a>
+   <ul class="other-section">
+      <li><a href="aplicaciones_en_la_salud_finanzas_marketing_y_ms.html" class="no-ch">Aplicaciones en la salud, finanzas, marketing, y más</a></li>
+      <li><a href="casos_de_uso_reales_de_big_data.html" class="no-ch">Casos de uso reales de Big Data</a></li>
+      <li><a href="desafos_y_consideraciones_ticas.html" class="no-ch">Desafíos y consideraciones éticas</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_5.html" class="daddy">Tema 5</a>
+   <ul class="other-section">
+      <li><a href="inteligencia_artificial_y_big_data.html" class="no-ch">Inteligencia Artificial y Big Data</a></li>
+      <li><a href="el_impacto_del_iot_en_el_big_data.html" class="no-ch">El impacto del IoT en el Big Data</a></li>
+      <li><a href="el_futuro_del_big_data_y_las_nuevas_tecnologas_emergentes.html" class="no-ch">El futuro del Big Data y las nuevas tecnologías emergentes</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="apache_spark.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tema_4.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Bases de datos NoSQL: MongoDB, Cassandra</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id28">
+<div class="iDevice emphasis0" >
+<div id="ta28_160_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><span style="font-size: 14pt;"> 1.¿Qué son las Bases de Datos NoSQL?</span></strong><br /><span style="font-size: 14pt;">Las bases de datos NoSQL (Not Only SQL) son una alternativa a las bases de datos relacionales tradicionales. Están diseñadas para manejar grandes volúmenes de datos no estructurados o semiestructurados, permitiendo mayor escalabilidad, flexibilidad y velocidad en el procesamiento.</span></p>
+<p><strong><span style="font-size: 14pt;">2.Tipos de Bases de Datos NoSQL</span></strong><br /><span style="font-size: 14pt;">Existen cuatro tipos principales de bases de datos NoSQL, cada una optimizada para casos de uso específicos.</span></p>
+<p><span style="font-size: 14pt;">a) Bases de Datos Documentales</span><br /><span style="font-size: 14pt;">📌 Almacenan datos en documentos JSON o BSON en lugar de tablas.</span><br /><span style="font-size: 14pt;">📌 Son flexibles y permiten estructuras dinámicas.</span></p>
+<p><span style="font-size: 14pt;">-Ejemplos:</span><br /><span style="font-size: 14pt;">✅ MongoDB</span><br /><span style="font-size: 14pt;">✅ CouchDB</span><br /><span style="font-size: 14pt;">✅ Firebase Firestore</span></p>
+<p><span style="font-size: 14pt;">-Casos de uso:</span><span> </span><span style="font-size: 14pt;">Aplicaciones web y móviles, a</span><span style="font-size: 14pt;">lmacenamiento de contenido dinámico</span><span>, s</span><span style="font-size: 14pt;">istemas de gestión de datos flexibles</span></p>
+<p><span style="font-size: 14pt;">b) Bases de Datos Clave-Valor</span><br /><span style="font-size: 14pt;">📌 Funcionan como un diccionario donde cada dato se almacena como un par clave-valor.</span><br /><span style="font-size: 14pt;">📌 Son extremadamente rápidas y eficientes.</span></p>
+<p><span style="font-size: 14pt;">-Ejemplos:</span><br /><span style="font-size: 14pt;">✅ Redis</span><br /><span style="font-size: 14pt;">✅ Amazon DynamoDB</span><br /><span style="font-size: 14pt;">✅ Memcached</span></p>
+<p><span style="font-size: 14pt;">-Casos de uso:</span><span style="font-size: 14pt;"> Caché de datos</span><span>, a</span><span style="font-size: 14pt;">dministración de sesiones de usuario</span><span>, j</span><span style="font-size: 14pt;">uegos en línea y sistemas en tiempo real</span></p>
+<p><span style="font-size: 14pt;">c) Bases de Datos Columnar</span><br /><span style="font-size: 14pt;">📌 Almacenan los datos en columnas en lugar de filas, optimizando consultas masivas.</span><br /><span style="font-size: 14pt;">📌 Son ideales para Big Data y análisis en tiempo real.</span></p>
+<p><span style="font-size: 14pt;"> -Ejemplos:</span><br /><span style="font-size: 14pt;">✅ Apache Cassandra</span><br /><span style="font-size: 14pt;">✅ HBase</span><br /><span style="font-size: 14pt;">✅ Google Bigtable</span></p>
+<p><span style="font-size: 14pt;">-Casos de uso:</span><span> </span><span style="font-size: 14pt;">Almacenamiento de grandes volúmenes de dato, p</span><span style="font-size: 14pt;">rocesamiento de logs y métricas</span><span>, a</span><span style="font-size: 14pt;">plicaciones de inteligencia de negocios</span></p>
+<p><span style="font-size: 14pt;">d) Bases de Datos de Grafos</span><br /><span style="font-size: 14pt;">📌 Diseñadas para almacenar y analizar relaciones complejas entre datos.</span><br /><span style="font-size: 14pt;">📌 Son utilizadas en redes sociales, motores de recomendación y análisis de fraudes.</span></p>
+<p><span style="font-size: 14pt;">-Ejemplos:</span><br /><span style="font-size: 14pt;">✅ Neo4j</span><br /><span style="font-size: 14pt;">✅ ArangoDB</span><br /><span style="font-size: 14pt;">✅ Amazon Neptune</span></p>
+<p><span style="font-size: 14pt;">-Casos de uso:</span><span> </span><span style="font-size: 14pt;">Redes sociales</span><span>, m</span><span style="font-size: 14pt;">otores de recomendación, d</span><span style="font-size: 14pt;">etección de fraudes</span></p>
+<p><br /><strong><span style="font-size: 14pt;">3.Principales Bases de Datos NoSQL</span></strong><br /><span style="font-size: 14pt;">🔹 MongoDB (Documental)</span><br /><span style="font-size: 14pt;">✅ Modelo basado en documentos JSON/BSON.</span><br /><span style="font-size: 14pt;">✅ Usado por empresas como eBay y Uber.</span><br /><span style="font-size: 14pt;">✅ Consultas avanzadas y escalabilidad horizontal.</span></p>
+<p><span style="font-size: 14pt;">🔹 Apache Cassandra (Columnar)</span><br /><span style="font-size: 14pt;">✅ Distribución peer-to-peer sin puntos únicos de fallo.</span><br /><span style="font-size: 14pt;">✅ Utilizado por Facebook, Netflix y Twitter.</span><br /><span style="font-size: 14pt;">✅ Optimizado para Big Data y análisis en tiempo real.</span></p>
+<p><span style="font-size: 14pt;">🔹 Redis (Clave-Valor)</span><br /><span style="font-size: 14pt;">✅ Base de datos en memoria para máxima velocidad.</span><br /><span style="font-size: 14pt;">✅ Ideal para caché y almacenamiento de sesiones.</span><br /><span style="font-size: 14pt;">✅ Utilizado por GitHub, Instagram y StackOverflow.</span></p>
+<p><span style="font-size: 14pt;">🔹 Neo4j (Grafos)</span><br /><span style="font-size: 14pt;">✅ Especializado en relaciones entre datos.</span><br /><span style="font-size: 14pt;">✅ Usado por LinkedIn y eBay para análisis de redes.</span><br /><span style="font-size: 14pt;">✅ Soporta consultas avanzadas con Cypher Query Language.</span></p>
+<p><br /><strong><span style="font-size: 14pt;">4.Ventajas y Desventajas de NoSQL</span></strong><br /><span style="font-size: 14pt;">📌 Ventajas</span><br /><span style="font-size: 14pt;">✔️ Escalabilidad horizontal (se expanden fácilmente con más servidores).</span><br /><span style="font-size: 14pt;">✔️ Flexibilidad (no requieren esquemas rígidos como SQL).</span><br /><span style="font-size: 14pt;">✔️ Alto rendimiento (rápidas en lectura/escritura de datos).</span><br /><span style="font-size: 14pt;">✔️ Tolerancia a fallos (distribución de datos en múltiples nodos).</span></p>
+<p><span style="font-size: 14pt;">📌 Desventajas</span><br />❌ No todas soportan transacciones ACID (algunas usan modelo BASE).<br />❌ Pueden ser complejas de administrar en grandes entornos.<br />❌ No siempre son la mejor opción para datos altamente relacionales.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="apache_spark.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tema_4.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Apache Spark | BigData </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Raúl Angeriz Leonisio" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">BigData</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="tema_1.html" class="daddy">Tema 1</a>
+   <ul class="other-section">
+      <li><a href="definicin.html" class="no-ch">Definición</a></li>
+      <li><a href="historia_y_evolucin.html" class="no-ch">Historia y evolución</a></li>
+      <li><a href="caractersticas_clave.html" class="no-ch">Características clave</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2.html" class="daddy">Tema 2</a>
+   <ul class="other-section">
+      <li><a href="componentes_de_la_arquitectura.html" class="no-ch">Componentes de la arquitectura</a></li>
+      <li><a href="herramientas_para_el_procesamiento_de_datos.html" class="no-ch">Herramientas para el procesamiento de datos</a></li>
+      <li><a href="almacenamiento_y_bases_de_datos_nosql.html" class="no-ch">Almacenamiento y bases de datos NoSQL</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_3.html" class="current-page-parent daddy">Tema 3</a>
+   <ul>
+      <li><a href="hadoop_y_mapreduce.html" class="no-ch">Hadoop y MapReduce</a></li>
+      <li id="active"><a href="apache_spark.html" class="active no-ch">Apache Spark</a></li>
+      <li><a href="bases_de_datos_nosql_mongodb_cassandra.html" class="no-ch">Bases de datos NoSQL: MongoDB, Cassandra</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4.html" class="daddy">Tema 4</a>
+   <ul class="other-section">
+      <li><a href="aplicaciones_en_la_salud_finanzas_marketing_y_ms.html" class="no-ch">Aplicaciones en la salud, finanzas, marketing, y más</a></li>
+      <li><a href="casos_de_uso_reales_de_big_data.html" class="no-ch">Casos de uso reales de Big Data</a></li>
+      <li><a href="desafos_y_consideraciones_ticas.html" class="no-ch">Desafíos y consideraciones éticas</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_5.html" class="daddy">Tema 5</a>
+   <ul class="other-section">
+      <li><a href="inteligencia_artificial_y_big_data.html" class="no-ch">Inteligencia Artificial y Big Data</a></li>
+      <li><a href="el_impacto_del_iot_en_el_big_data.html" class="no-ch">El impacto del IoT en el Big Data</a></li>
+      <li><a href="el_futuro_del_big_data_y_las_nuevas_tecnologas_emergentes.html" class="no-ch">El futuro del Big Data y las nuevas tecnologías emergentes</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="hadoop_y_mapreduce.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="bases_de_datos_nosql_mongodb_cassandra.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Apache Spark</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id27">
+<div class="iDevice emphasis0" >
+<div id="ta27_159_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 14pt;"><strong>1.¿Qué es Apache Spark?</strong> 🚀</span><br /><span style="font-size: 14pt;">Apache Spark es un motor de procesamiento de datos en clúster diseñado para manejar grandes volúmenes de datosde manera rápida y eficiente. Se destaca por su capacidad de procesamiento en memoria, lo que lo hace significativamente más rápido que Hadoop MapReduce.</span></p>
+<p><span style="font-size: 14pt;">-Características principales:</span><br /><span style="font-size: 14pt;">✅ Procesamiento en memoria: Reduce la latencia y mejora la velocidad de análisis.</span><br /><span style="font-size: 14pt;">✅ Escalabilidad: Puede ejecutarse en clústeres grandes con miles de nodos.</span><br /><span style="font-size: 14pt;">✅ Compatibilidad con Hadoop: Puede usarse junto con HDFS, Hive y HBase.</span><br /><span style="font-size: 14pt;">✅ Lenguajes de programación soportados: Compatible con Python, Scala, Java y R.</span><br /><span style="font-size: 14pt;">✅ Procesamiento en tiempo real: Gracias a Spark Streaming y Structured Streaming.</span></p>
+<p><strong><span style="font-size: 14pt;">2.Arquitectura de Apache Spark</span></strong><br /><span style="font-size: 14pt;">a) RDD (Resilient Distributed Dataset)</span><br /><span style="font-size: 14pt;">-Los RDDs son la estructura de datos fundamental en Spark. Son colecciones de datos distribuidos en clústeres, permitiendo operaciones paralelas eficientes.</span></p>
+<p><span style="font-size: 14pt;">b) Spark Core</span><br /><span style="font-size: 14pt;">-Es el motor principal de Spark y proporciona funciones para:</span><span style="font-size: 14pt;">Manejo de tareas distribuidas.</span><br /><span style="font-size: 14pt;">-Gestión de memoria y almacenamiento en caché.</span><br /><span style="font-size: 14pt;">-Recuperación ante fallos.</span><br /><span style="font-size: 14pt;"> </span></p>
+<p><strong><span style="font-size: 14pt;">3.Procesamiento de Datos en Tiempo Real con Apache Spark</span></strong><br /><span style="font-size: 14pt;">El procesamiento de datos en tiempo real permite analizar eventos en el momento en que ocurren. Spark Streaming y Structured Streaming son los módulos clave de Spark para este tipo de tareas.</span></p>
+<p><span style="font-size: 14pt;">a) Spark Streaming</span><br /><span style="font-size: 14pt;">📌 Permite procesar flujos de datos en tiempo real dividiendo la información en micro-batches (lotes pequeños).</span><br /><span style="font-size: 14pt;">📌 Se integra con Kafka, Flume, Twitter, HDFS y sockets de red.</span><br /><span style="font-size: 14pt;">📌 Útil para detección de fraudes, monitoreo de redes, análisis financiero y más.</span></p>
+<p><span style="font-size: 14pt;">b) Structured Streaming (Streaming Estructurado)</span><br /><span style="font-size: 14pt;">Es una evolución de Spark Streaming, optimizada para procesamiento continuo con bajo tiempo de respuesta.</span></p>
+<p><span style="font-size: 14pt;">📌 Se basa en Spark SQL, facilitando el análisis en tiempo real con consultas SQL.</span><br /><span style="font-size: 14pt;">📌 Compatible con Kafka, Amazon Kinesis, Azure Event Hubs y más.</span><br /><span style="font-size: 14pt;">📌 Útil para análisis de logs, monitoreo de redes, detección de fraudes.</span></p>
+<p><strong><span style="font-size: 14pt;">4.Casos de Uso de Apache Spark en Tiempo Real</span></strong><br /><span style="font-size: 14pt;">📌 Detección de fraudes en bancos:</span><span> </span><span style="font-size: 14pt;">Los bancos usan Spark Streaming para analizar transacciones en tiempo real y detectar fraudes antes de que ocurran.</span></p>
+<p><span style="font-size: 14pt;">📌 Análisis de redes sociales (Twitter, Facebook, Instagram):</span><span> </span><span style="font-size: 14pt;">Empresas de marketing usan Structured Streaming para analizar tendencias y emociones en redes sociales en tiempo real.</span></p>
+<p><span style="font-size: 14pt;">📌 Monitoreo de sistemas y seguridad:</span><span> </span><span style="font-size: 14pt;">Empresas de ciberseguridad emplean Spark para detectar patrones sospechosos en registros de actividad.</span></p>
+<p><span style="font-size: 14pt;">📌 Optimización de cadenas de suministro:</span><span> </span><span style="font-size: 14pt;">Las grandes compañías de logística, como FedEx y UPS, usan Apache Spark para monitorear envíos en tiempo real.</span></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="hadoop_y_mapreduce.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="bases_de_datos_nosql_mongodb_cassandra.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
